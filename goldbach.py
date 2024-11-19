@@ -66,7 +66,8 @@ def main():
             if list_of_primes:
                 for prime_pairs in list_of_primes:
                     print(f"The number {number} equals to the sum of {prime_pairs[0]} and {prime_pairs[1]}")
-            print(f"The number {number} is not equal to the sum of two primes.")
+            else:
+                print(f"The number {number} is not equal to the sum of two primes.")
         except ValueError:
             print("Invalid input, please enter a positive integer")
             continue
@@ -76,4 +77,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
